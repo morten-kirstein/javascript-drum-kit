@@ -6,35 +6,54 @@
 </head>
 <body>
 	<div class="keys">
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="65">
+			<kdb>A</kdb>
+			<span class="sound"></span>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="83">
+			<kdb>S</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="68">
+			<kdb>D</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="70">
+			<kdb>F</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="71">
+			<kdb>G</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="72">
+			<kdb>H</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="74">
+			<kdb>J</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="75">
+			<kdb>K</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
+		<div class="key" data-key="76">
+			<kdb>L</kdb>
 		</div>
-		<div class="key" data-key="">
-			<kdb></kdb>
-		</div>
+	</div>
+
+	<audio src="" data-key="65" ></audio>
+	<audio src="" data-key="83" ></audio>
+	<audio src="" data-key="68" ></audio>
+	<audio src="" data-key="70" ></audio>
+	<audio src="" data-key="71" ></audio>
+	<audio src="" data-key="72" ></audio>
+	<audio src="" data-key="74" ></audio>
+	<audio src="" data-key="75" ></audio>
+	<audio src="" data-key="76" ></audio>
+
+	<script>
+		window.addEventListener('keydown', function(evnt) {
+
+		const audio = document.querySelector(`audio[data-key="${evnt.keyCode}"]`);
+
+		console.log(audio);
+
+		});
+	</script>
 </body>
 </html>
