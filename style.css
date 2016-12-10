@@ -1,4 +1,14 @@
 
+
+body {
+	margin: 0px
+	padding: 0px;
+}
+
+.background-container {
+	background-color: hotpink;
+}
+
 .keys {
 	display: flex;
 	justify-content: center;
@@ -13,12 +23,19 @@
 	text-align: center;
 }
 
+.kdb {
+	font-size: 40px;
+	display: block;
+}
+
+/* modifiers */
+
 .playing {
 	transform:scale(1.2);
 	border: 3px solid yellow;
 }
 
-.kdb{
-	font-size: 40px;
-	display: block;
-}
+
+
+
+
